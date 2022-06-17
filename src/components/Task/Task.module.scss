@@ -1,0 +1,101 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  align-items: flex-start;
+  background: var(--base-gray-500);
+  padding: 1rem;
+  border-radius: .5rem;
+
+  & + .task {
+    margin-top: .75rem;
+  }
+
+  button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border: none;
+    background: transparent;
+    border-radius: .25rem;
+
+    &.delete {
+      color: var(--base-gray-300);
+      transition: color .3s, background-color .3s;
+
+      &:hover, &:focus {
+        color: var(--base-danger);
+        background: var(--base-gray-400);
+      }
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+
+    button {
+      span {
+        margin: 0;
+        padding: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        transition: background-color .3s;
+
+        svg {
+          transition: opacity .3s;
+          color: var(--base-gray-100);
+        }
+      }
+    }
+            
+    p {
+      word-break: break-word;
+      font-size: .875rem;
+      line-height: 140%;
+      color: var(--base-gray-100);
+    }
+
+    &.default {
+      span {
+        background: transparent;
+        border: 2px solid var(--brand-blue);
+
+        &:hover{
+          background: var(--brand-blue-dark-reduced);
+        }  
+      }
+
+      svg {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &.done {
+      span {
+        border: none;
+        background: var(--brand-purple);
+        
+        &:hover{
+          background: var(--brand-purple-dark);
+        }
+      }
+
+      svg {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      p {
+        text-decoration: line-through;
+        color: var(--base-gray-300);
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.taskList {
+  margin-top: 4rem;
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    strong {
+      color: var(--brand-blue );
+      font-weight: bold;
+
+      &:last-child {
+        color: var(--brand-purple);
+      }
+    }
+
+    .doneTasks {
+      display: inline-flex;
+      width: 53px;
+    }
+
+    span {
+      padding-block: .125rem;
+      border-radius: 999px;
+      margin-left: .8rem;
+      padding-inline: .5rem;
+      background: var(--base-gray-400);
+      color: var(--base-gray-200);
+      font-size: .75rem;
+    }
+  }
+}
+
+section {
+  margin-top: 1.5rem;
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4rem;
+    border-radius: .5rem;
+    border-top: 1px solid var(--base-gray-400);
+
+    svg {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 140%
+    }
+  }
+}

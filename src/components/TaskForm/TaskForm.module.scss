@@ -1,0 +1,35 @@
+.taskForm {
+  margin-top: -1.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+
+  input {
+    flex: 1;
+    border-radius: .5rem;
+    padding-inline: 1rem;
+    background: var(--base-gray-500);
+    border: 1px solid var(--base-gray-700);
+    color: var(--base-gray-100);
+  }
+
+  button {
+    width: 90px;
+    height: 52px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: 0;
+    background: var(--brand-blue-dark);
+    color: var(--base-gray-100);
+    border-radius: .5rem;
+    font-weight: bold;
+    transition: background-color .3s;
+
+    &:hover {
+      background: var(--brand-blue);
+    }
+  }
+}
