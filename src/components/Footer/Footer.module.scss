@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+  margin-top: 16rem;
+  padding-block: 2rem;
+  background: var(--base-gray-700);
+
+  a {
+    color: var(--base-gray-300);
+    text-underline-offset: 2px;
+  }
+}

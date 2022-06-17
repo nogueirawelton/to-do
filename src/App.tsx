@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { TaskList } from './components/TaskList';
 import { TaskForm } from './components/TaskForm';
 import { useState } from 'react';
+import { Footer } from './components/Footer';
 
 interface Task {
   id: string;
@@ -24,6 +25,7 @@ export const App = () => {
           <TaskList tasks={tasks} setTasks={setTasks}/>
         </main>
       </div>
+      <Footer />
     </>
   )
 }
